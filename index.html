@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>علي الراوي | مساعد طبيب وفنان تشكيلي</title>
+    <title>علي الراوي | صانع محتوى فني وسفر - معاون طبي - حامل لقب غينيس</title>
     <style>
         :root {
             --primary: #2E86AB;
@@ -71,6 +71,11 @@
             font-size: 20px;
             opacity: 0.9;
             margin-bottom: 15px;
+        }
+        
+        .profile-subtitle {
+            font-size: 16px;
+            margin-bottom: 5px;
         }
         
         /* أقسام المحتوى */
@@ -195,7 +200,7 @@
         }
         
         .work-image {
-            height: 300px ;
+            height: 300px;
             background: #eee;
             display: flex;
             align-items: center;
@@ -215,6 +220,41 @@
             margin-bottom: 5px;
         }
         
+        /* قائمة الشركاء مع الأيقونات */
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .partner-card {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+        
+        .partner-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .partner-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 10px;
+            object-fit: contain;
+        }
+        
+        .partner-name {
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
         /* التكيف مع الشاشات الصغيرة */
         @media (max-width: 768px) {
             .profile-header {
@@ -228,6 +268,11 @@
             .content-section {
                 padding: 25px 20px;
             }
+            
+            .partners-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                gap: 15px;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
@@ -240,9 +285,11 @@
             <!-- رأس البروفايل -->
             <div class="profile-header">
                 <!-- استبدل src بالمسار الصحيح لصورتك -->
-                <img src="hom.jpg"alt="صورة علي الراوي" class="profile-pic">
+                <img src="hom.jpg" alt="صورة علي الراوي" class="profile-pic">
                 <h1 class="profile-name">علي الراوي</h1>
-                <div class="profile-title">مساعد طبيب | فنان تشكيلي</div>
+                <div class="profile-title">صانع محتوى فني وسفر </div>
+                <div class="profile-title">معاون طبي</div>
+                
             </div>
             
             <!-- قسم الإنجازات -->
@@ -250,9 +297,87 @@
                 <h2 class="section-title">إنجازاتي</h2>
                 
                 <div class="achievement-card">
-                    <img src="h1.jpg" class="guinness-icon">
+                    <img src="Picsart_25-05-04_11-05-29-313.png" class="guinness-icon">
                     <div class="achievement-text">
-                        حاصل على لقب غينيس لأكبر لوحة في العالم مرسومة بالأسلاك والمسامير
+                        حاصل على لقب غينيس للأرقام القياسية لأكبر لوحة في العالم مرسومة بالمسامير والأسلاك النحاسية
+                    </div>
+                </div>
+            </div>
+            
+            <!-- قسم الشركاء -->
+            <div class="content-section">
+                <h2 class="section-title">شركاء العمل</h2>
+                <p>الشركات التي تعاونت معها في الإعلانات:</p>
+                
+                <div class="partners-grid">
+                    <div class="partner-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVul_5zQMPqjXXSoMGEwgoyBVw-KrXuM0ykQ&s" alt="AsiaCell" class="partner-icon">
+                        <div class="partner-name">اسياسيل</div>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/LG_symbol.svg/640px-LG_symbol.svg.png" alt="LG" class="partner-icon">
+                        <div class="partner-name">LG</div>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaJRJu7rvoccoBBZsW90HTpOxcriWebfPqfQ&s" alt="Beli" class="partner-icon">
+                        <div class="partner-name">تطبيق بلي</div>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKv1O-eJKXAAJYRQV6HBBP7_lrHbSwyIhASg&s" alt="Pure Platform" class="partner-icon">
+                        <div class="partner-name">pure platform</div>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <img src="https://play-lh.googleusercontent.com/BBj1NypyTpGx3WMypGjHvGsOTE3-m_gzP9vnOCbJuF4Twk4WZ7ZQemwwLC3T5FdPJRQ" alt="Go Play" class="partner-icon">
+                        <div class="partner-name">go play</div>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <img src="https://media.zid.store/88eb59ee-630d-48ca-89bd-76828aeb9ec9/1c0cbbcb-a1f1-4061-a89a-0b4947409f64-260x260.jpg" alt="Infinix" class="partner-icon">
+                        <div class="partner-name">infinix</div>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwa2Owjw7Nu-eUxklm1zvYaTwGHvuUp9BlTQ&s" alt="Honor" class="partner-icon">
+                        <div class="partner-name">Honor</div>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <img src="https://images.deliveryhero.io/image/talabat/restaurants/Logo_-_Ali_Ghazi_Moh_637509838251055877.jpg?width=180" alt="عصير تايم" class="partner-icon">
+                        <div class="partner-name">عصير تايم</div>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuXclv48vgjQRrofUtPlhwoyD_EDt6OyuIOw&s" alt="بابا كنافة" class="partner-icon">
+                        <div class="partner-name">بابا كنافة</div>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc0P9RWVKHc5W_LyxSrhGPvDVK044glxQujA&s" alt="فاير فلاي" class="partner-icon">
+                        <div class="partner-name">فاير فلاي</div>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQa14COkRFIyvnOJxGPzhK5mJuJ6Xh-Ulj_g&s" alt="فود لاند" class="partner-icon">
+                        <div class="partner-name">فود لاند</div>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhvn3M1-I2VO4M4kyjJbslMSxjt_SJVp-6-w&s" alt="سوبر صوص" class="partner-icon">
+                        <div class="partner-name">سوبر صوص</div>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2lMfTO1P2ncYjFyXdQgoB4y53FfwQYS5L9A&s" alt="بزنز افنيو" class="partner-icon">
+                        <div class="partner-name">بزنز افنيو</div>
+                    </div>
+                    
+                    <div class="partner-card">
+                        <img src="https://static.wixstatic.com/media/86e025_13c3ac2eec304fd2856f838a61a25568~mv2.png/v1/fill/w_560,h_452,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Image-empty-state.png" alt="Next Level" class="partner-icon">
+                        <div class="partner-name">Next Level</div>
                     </div>
                 </div>
             </div>
@@ -261,19 +386,18 @@
             <div class="content-section">
                 <h2 class="section-title">للأعمال والإعلانات</h2>
                 
-                <p>أستقبل عروض العمل والتعاون</p>
+                <p>أستقبل عروض العمل والتعاون سواء كانت شراكات على المدى الطويل أو القصير وحملات إعلانية.</p>
+                <p>الإعلانات أو التعاونات تكون بطريقة مبتكرة واحترافية بعيدة عن التكرار والملل.</p>
                 
                 <div class="contact-info">
                     <div class="contact-icon">
                         <i class="fas fa-phone"></i>
                     </div>
-                    <a href ="https://wa.me/964 770 000 5871"> 
-                    	<div class="contact-text">
-                    	
-                        +964 7700005871
-                    </div>
-</a>
-                    
+                    <a href="https://wa.me/9647700005871">
+                        <div class="contact-text">
+                            +964 7700005871
+                        </div>
+                    </a>
                 </div>
             </div>
             
@@ -286,22 +410,19 @@
                 <div class="social-links">
                     <a href="https://www.instagram.com/ali_alrawi26?igsh=MXY3YjZkMnh2dmx4MA==" class="social-link" title="إنستغرام"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.facebook.com/share/1J9ErFmzV6/" class="social-link" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-                    
                     <a href="https://youtube.com/channel/UC3H06ufUnkuGoJYe6aY6sUQ" class="social-link" title="يوتيوب"><i class="fab fa-youtube"></i></a>
-                    
                 </div>
             </div>
         </div>
         
-        <!-- قسم معرض الأعمال (اختياري) -->
+        <!-- قسم معرض الأعمال -->
         <div class="profile-card">
             <div class="content-section">
                 <h2 class="section-title">أعمالي الفنية</h2>
                 
                 <div class="work-grid">
                     <div class="work-card">
-                        <!-- استبدل style بالمسار الصحيح لصورتك الفنية -->
-                        <div class="work-image" style="background-image: url('h3.jpg')"></div>
+                        <div class="work-image" style="background-image: url('IMG_0718.JPG')"></div>
                         <div class="work-details">
                             <div class="work-title">لوحة غينيس القياسية</div>
                             <p>أكبر لوحة بالأسلاك والمسامير</p>
@@ -309,25 +430,61 @@
                     </div>
                     
                     <div class="work-card">
-                        <!-- استبدل style بالمسار الصحيح لصورتك الفنية -->
-                        <div class="work-image" style="background-image: url('hh.jpg')"></div>
-                        <div class="work-details">
-                            <div class="work-title">معرض الفن الحديث</div>
-                            <p>أعمال فنية مبتكرة</p>
+                        <div class="work-image" style="background-image: url('IMG_0725.JPG')"></div>
+                        <br>
+                     
                         </div>
+                        
+                    </div>
+                    <br>
+                    <div class="work-card">
+                        <div class="work-image" style="background-image: url('IMG_٢٠٢٥٠٥٠٤_١١٢٩٣٠.jpg')"></div>
+                        <div class="work-details">
+                            
+                        </div>
+                 
                     </div>
                     
-                    <div class="work-card">
-                        <!-- استبدل style بالمسار الصحيح لصورتك الطبية -->
-                        <div class="work-image" style="background-image: url('hhh.jpg')"></div>
-                        <div class="work-details">
-                            <div class="work-title">العمل الطبي</div>
-                            <p>مساعد طبيب متخصص</p>
-                        </div>
-                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
     </div>
+    
+    <script>
+// الكود الأصلي
+function myFunction() {
+  alert("Hello!");
+}
+
+// بعد التعتيم قد يبدو كالتالي:
+eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1 0(){2("3!")}',4,4,'myFunction|function|alert|Hello'.split('|'),0,{}))
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+document.addEventListener('keydown', function(e) {
+  // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+  if (e.key === "F12" || 
+      (e.ctrlKey && e.shiftKey && e.key === "I") || 
+      (e.ctrlKey && e.shiftKey && e.key === "J") || 
+      (e.ctrlKey && e.key === "U")) {
+    e.preventDefault();
+  }
+});
+
+
+
+</script>
+
+
+<!--
+  حقوق النشر © 2025 بواسطة [حسوني الراوي ].
+  هذا العمل محمي بموجب [لا اسامح من يعدل على الكود].
+  أي استخدام غير مصرح به محظور.
+-->
+	
 </body>
 </html>
